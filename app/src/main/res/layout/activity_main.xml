@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical"
+    tools:context="com.example.android.inkaleidoskop.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zero"
+        android:layout_weight="0.75">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/inkaleidoskop" />
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zero"
+        android:layout_weight="1"
+        android:paddingBottom="@dimen/pad_mar_1"
+        android:paddingTop="@dimen/pad_mar_1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout style="@style/Scroller">
+
+                <ImageView
+                    android:id="@+id/qigong"
+                    style="@style/ImageScroller"
+                    android:src="@drawable/qigong" />
+
+                <TextView
+                    style="@style/TextScroller"
+                    android:layout_alignBottom="@id/qigong"
+                    android:text="@string/qigong"/>
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/Scroller">
+
+                <ImageView
+                    android:id="@+id/dorn"
+                    style="@style/ImageScroller"
+                    android:src="@drawable/dorn" />
+
+                <TextView
+                    style="@style/TextScroller"
+                    android:layout_alignBottom="@id/dorn"
+                    android:text="@string/dorn_method" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/Scroller">
+
+                <ImageView
+                    android:id="@+id/spirit"
+                    style="@style/ImageScroller"
+                    android:src="@drawable/spirit" />
+
+                <TextView
+                    style="@style/TextScroller"
+                    android:layout_alignBottom="@id/spirit"
+                    android:text="@string/mediumship" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/Scroller">
+
+                <ImageView
+                    android:id="@+id/healing"
+                    style="@style/ImageScroller"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="center"
+                    android:src="@drawable/healing" />
+
+                <TextView
+                    style="@style/TextScroller"
+                    android:layout_alignBottom="@id/healing"
+                    android:text="@string/healing" />
+            </RelativeLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/map"
+            style="@style/Button"
+            android:onClick="map"
+            android:src="@drawable/ic_place_black_24dp" />
+
+        <ImageButton
+            android:id="@+id/phone"
+            style="@style/Button"
+            android:onClick="phone"
+            android:src="@drawable/ic_call_black_24dp" />
+
+        <ImageButton
+            android:id="@+id/url"
+            style="@style/Button"
+            android:onClick="url"
+            android:src="@drawable/ic_open_in_browser_black_24dp" />
+    </LinearLayout>
+</LinearLayout>

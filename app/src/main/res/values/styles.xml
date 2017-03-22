@@ -1,0 +1,46 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+    </style>
+
+    <!-- Texts in the horizontal scroll. -->
+    <style name="TextScroller">
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/PrimarySemiTrans</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <!-- Images in the horizontal scroll. -->
+    <style name="ImageScroller">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <!-- Layout in horizontal scroll. -->
+    <style name="Scroller">
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@android:color/black</item>item>
+    </style>
+
+    <!-- Buttons at bottom of screen for contact info. -->
+    <style name="Button">
+        <item name="android:layout_width">@dimen/pad_mar_2</item>
+        <item name="android:layout_height">@dimen/pad_mar_2</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:tint">@color/colorAccent</item>
+        <item name="android:layout_margin">@dimen/pad_mar_1</item>
+        <item name="android:background">@drawable/rounded_corners</item>
+    </style>
+
+</resources>

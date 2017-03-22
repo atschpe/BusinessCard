@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">InKaleidoskop</string>
+    <string name="mediumship">Mediumship</string>
+    <string name="qigong">QiGong</string>
+    <string name="dorn_method">Dorn Method</string>
+    <string name="address">0,0?q=Inkaleidoskop%20Eschbach</string>
+    <string name="phone">+49 (0)7634/5053741</string>
+    <string name="url">http://inkaleidoskop-engl.weebly.com/</string>
+    <string name="healing">Healing</string>
+</resources>
